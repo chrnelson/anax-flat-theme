@@ -2,8 +2,8 @@
  * Regions, basics to show off the regions.
  */
 .wrap-all {
-    margin: 0 auto;
-    max-width: 950px;
+    //margin: 0 auto;
+    //max-width: 950px;
 }
 
 .footer-column {
@@ -15,24 +15,42 @@
     overflow: auto;
 }
 
-.sidebar {
-    width: 33%;
-    float: left;
+.outer-wrap-main {
+    //width: 100%;
+    //overflow: auto;
 }
 
-.main .has-sidebar {
-    width: 67%;
+.inner-wrap-main {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: block;
+}
+
+.sidebar {
+    display: inline;
     float: left;
+    width: 33%;
+}
+
+.main.has-sidebar {
+    display: inline;
+    float: right;
+    width: 67%;
+    text-align: justify;
 }
 
 .outer-wrap-footer {
     clear: both;
-    margin-bottom: 22px;
+    //margin-bottom: 22px;
 }
 
 .site-footer {
     text-align: center;
-    
+
     ul {
         margin: 0;
         padding: 0;
@@ -57,14 +75,16 @@
     .previous {
         width: 50%;
     }
-    
+
     .next {
         float: right;
         text-align: right;
     }
 }
 
-.breadcrumb {
+.breadcrumb-list {
+    margin-top: 5px;
+    margin-left: 10px;
     margin-bottom: 22px;
 
     ul {
@@ -72,7 +92,7 @@
         padding: 0;
         list-style-type: none;
     }
-    
+
     li {
         display: inline;
 

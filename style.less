@@ -11,11 +11,14 @@
     height: 80px;
 }
 
-.site-logo-text,
-.navbar2,
+.site-logo-text {
+    float: left;
+    width: 50%;
+}
+
 .profile {
     float: left;
-    width: 30%;
+    width: 10%;
 }
 
 .site-logo-text {
@@ -27,37 +30,24 @@
     }
 }
 
-//navbar main
-.rm-desktop li {
-    //background-color: #eee;
-}
-
-@navbarItemBgColor: #eee;
-
-//navbar max
-.rm-max .rm-small .rm-button {
-    //font-size: 2em;
-}
-
-@maxButtonFontSize: 2em;
-
 /** --------------------------------------------------------------
  *  Flash image
  */
 
- .flash-wrap {
+.flash-wrap {
     img {
         max-width: 100%;
     }
- }
+}
 
 /** --------------------------------------------------------------
  *  Logo images
  */
 .logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
+    display: none;
+    //position: absolute;
+    //top: 70px;
+    //left: -140px;
 }
 
 .site-logo-text-icon {
@@ -67,41 +57,51 @@
 }
 
 /** --------------------------------------------------------------
- *  responsive design
+ *  main
  */
- @media screen and (max-width: 900px) {
-     .site-logo-text {
-         width: 40%;
-     }
 
-     .navbar2 {
-         width: 50%;
-     }
+.main-image {
+    float: right;
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 
-     .profile {
-         width: 10%;
-     }
- }
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        //width: 100%;
-        display: none;
+    .site-logo-text {
+        font-size: 1.25em;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .footer-column {
+
+    .outer-wrap-main {
+        padding: 15px;
+    }
+
+    .sidebar {
+        float: none;
         width: 100%;
     }
+
+    .main.has-sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .footer-column-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
- @media screen and (max-width: 560px) {
-     .site-logo-text {
-         width: 90%;
-     }
+@media screen and (max-width: 500px) {
+    .main-image {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 80%;
 
-     .navbar2 {
-        display: none;
-     }
- }
+    }
+}
