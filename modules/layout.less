@@ -61,14 +61,18 @@
 }
 
 .site-logo-text {
-    .column(8);
+    .column(6);
     font-family: @fontFamilyHeadings;
+    font-weight: bold;
     //background-color: yellow;
     //opacity: 0.5;
+    & a {
+        text-decoration: none;
+    }
 }
 
 .navbar2 {
-    .column(16);
+    .column(18);
     font-family: @fontFamilyHeadings;
     //background-color: yellow;
     //opacity: 0.5;
@@ -91,6 +95,11 @@
     //.push(2);
     //background-color: green;
     //opacity: 0.5;
+
+    & img {
+        .column(@columns);
+        margin-bottom: 10px;
+    }
 
     & .main-image {
         float: right;
